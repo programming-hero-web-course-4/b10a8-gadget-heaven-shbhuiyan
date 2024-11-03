@@ -11,7 +11,7 @@ const Navbar = () => {
     </>
 
   return (
-    <div className="navbar bg-base-100 items-center">
+    <div className="navbar items-center md:px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,9 +44,9 @@ const Navbar = () => {
           {Links}
         </ul>
       </div>
-      <div className="navbar-end gap-4">
-        <Link to='/dashboard' className="text-xl p-2 border rounded-full"><FaCartPlus /></Link>
-        <Link to='/dashboard' className="text-xl p-2 border rounded-full"><FaRegHeart /></Link>
+      <div className="navbar-end gap-4 text-black">
+        <Link to='/dashboard' className="text-xl p-2 bg-white rounded-full"><FaCartPlus /></Link>
+        <Link to='/dashboard' className="text-xl p-2 bg-white rounded-full"><FaRegHeart /></Link>
       </div>
     </div>
   );
