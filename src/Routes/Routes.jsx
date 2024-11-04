@@ -11,6 +11,7 @@ import SmartWatches from "../Components/HomeNested/SmartWatches/SmartWatches";
 import Accessories from "../Components/HomeNested/Accessories/Accessories";
 import Statistics from "../Pages/Statistics/Statistics";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Details from "../Components/Details/Details";
 
 const router = createBrowserRouter([
     {
@@ -66,6 +67,11 @@ const router = createBrowserRouter([
             {
                 path:'/dashboard',
                 element:<Dashboard></Dashboard>
+            },
+            {
+                path:'/details/:id',
+                loader:()=> fetch('Products.json'),
+                element:<Details></Details>
             }
         ]
     },

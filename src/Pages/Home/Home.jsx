@@ -1,7 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import './Home.css'
 import Banner from "../../Components/Banner/Banner";
-import Footer from "../../Components/Footer/Footer";
 
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
 
 
     return (
-        <div className="space-y-20">
+        <>
             <Banner></Banner>
             <div id="home" className="p-5 space-y-10">
             <h1 className="text-3xl md:text-6xl font-bold text-center">Explore Cutting Edge Gadgets</h1>
@@ -28,8 +27,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <Footer></Footer>
-        </div>
+        </>
     );
 };
 

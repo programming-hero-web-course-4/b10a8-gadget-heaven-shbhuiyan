@@ -1,12 +1,12 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-700 py-8 ">
-      <div className="container mx-auto text-center mb-8 pb-8 border-b-2 border-dashed">
+    <footer className="bg-white text-gray-700 py-8 container mx-auto">
+      <div className=" text-center mb-8 pb-8 border-b-2 border-dashed">
         <h2 className="text-2xl font-bold">Gadget Heaven</h2>
         <p className="text-gray-500 mt-2">Leading the way in cutting-edge technology and innovation.</p>
       </div>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
+      <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 justify-items-center text-center sm:text-left">
         {/* Services Section */}
         <div>
           <h3 className="font-semibold text-gray-800">Services</h3>

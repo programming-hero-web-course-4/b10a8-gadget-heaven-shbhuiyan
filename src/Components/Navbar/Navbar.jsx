@@ -1,7 +1,10 @@
 import { FaCartPlus, FaRegHeart } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import './Navbar.css'
 
 const Navbar = () => {
+
+    const location = useLocation();
 
     const Links = <>
         <NavLink to='/'><li>Home</li></NavLink>
@@ -11,7 +14,7 @@ const Navbar = () => {
     </>
 
   return (
-    <div className="navbar items-center bg-purple-500 text-white md:px-14 md:rounded-t-xl">
+    <div id="navbar" className={`${location.pathname !== "/" ? "navbar items-center text-black md:px-14 md:rounded-t-xl" : "navbar items-center bg-purple-500 text-white md:px-14 md:rounded-t-xl"}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,8 +48,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4 text-black">
-        <Link to='/dashboard' className="text-xl p-2 bg-white rounded-full"><FaCartPlus /></Link>
-        <Link to='/dashboard' className="text-xl p-2 bg-white rounded-full"><FaRegHeart /></Link>
+        <Link to='/dashboard' className="text-xl p-2 border bg-white rounded-full"><FaCartPlus /></Link>
+        <Link to='/dashboard' className="text-xl p-2 border bg-white rounded-full"><FaRegHeart /></Link>
       </div>
     </div>
   );
