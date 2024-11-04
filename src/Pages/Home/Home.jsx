@@ -7,10 +7,10 @@ const Home = () => {
 
 
     return (
-        <div className="p-5 space-y-10">
+        <div id="home" className="p-5 space-y-10">
             <h1 className="text-3xl md:text-6xl font-bold text-center">Explore Cutting Edge Gadgets</h1>
-            <div className="md:flex justify-center items-start gap-6">
-                <div id="categories" className="w-1/4 text-2xl font-semibold p-8  text-gray-700 border-2 rounded-xl flex flex-col gap-5">
+            <div className="lg:flex justify-center items-start gap-6 max-lg:space-y-8">
+                <div id="categories" className="lg:w-1/4 text-2xl font-semibold p-8  text-gray-700 border-2 rounded-xl flex flex-col gap-5">
                     <NavLink to='/' className="px-6 py-3 bg-base-300 rounded-full hover:scale-105 duration-500 hover:border-2 hover:border-purple-500 border-2 border-transparent">All Products</NavLink>
                     <NavLink to='/laptop' className="px-6 py-3 bg-base-300 rounded-full hover:scale-105 duration-500 hover:border-2 hover:border-purple-500 border-2 border-transparent">Laptop</NavLink>
                     <NavLink to='/mac' className="px-6 py-3 bg-base-300 rounded-full hover:scale-105 duration-500 hover:border-2 hover:border-purple-500 border-2 border-transparent">Mac Book</NavLink>
@@ -19,7 +19,7 @@ const Home = () => {
                     <NavLink to='/watch' className="px-6 py-3 bg-base-300 rounded-full hover:scale-105 duration-500 hover:border-2 hover:border-purple-500 border-2 border-transparent">Smart Watches</NavLink>
                     <NavLink to='/accessories' className="px-6 py-3 bg-base-300 rounded-full hover:scale-105 duration-500 hover:border-2 hover:border-purple-500 border-2 border-transparent">Accessories</NavLink>
                 </div>
-                <div className="w-3/4 border-2 rounded-xl">
+                <div className="lg:w-3/4">
                     <Outlet></Outlet>
                 </div>
             </div>

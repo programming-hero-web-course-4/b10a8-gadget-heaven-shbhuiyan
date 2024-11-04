@@ -1,6 +1,8 @@
 import FloatingBanner from "./FloatingBanner";
 
 const Banner = () => {
+
+
   return (
     <div className="hero pt-6 pb-20 md:pb-64 relative">
       <div className="hero-content text-center">
@@ -9,7 +11,7 @@ const Banner = () => {
           <p className="py-6">
           Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
           </p>
-          <button className="bg-white text-purple-500 text-2xl font-semibold px-5 py-2 rounded-3xl duration-500 hover:scale-105">Shop Now</button>
+          <a href="#home"  className="bg-white text-purple-500 text-2xl font-semibold px-5 py-2 rounded-3xl duration-500 hover:scale-105">Shop Now</a>
         </div>
       </div>
       <FloatingBanner></FloatingBanner>
