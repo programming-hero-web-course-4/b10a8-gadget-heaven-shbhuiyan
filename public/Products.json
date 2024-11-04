@@ -1,0 +1,674 @@
+[
+    {
+      "product_id": "P001",
+      "product_title": "Dell Inspiron 15",
+      "product_image": "https://i.ibb.co.com/6WqVdj9/Dell-Inspiron-15.jpg",
+      "category": "Laptop",
+      "price": 699.99,
+      "description": "Dell Inspiron 15 with Intel Core i5, 8GB RAM, and 256GB SSD.",
+      "Specification": [
+        "15.6-inch FHD Display",
+        "Intel Core i5",
+        "8GB RAM",
+        "256GB SSD",
+        "Windows 10"
+      ],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": "P002",
+      "product_title": "HP Pavilion x360",
+      "product_image": "https://i.ibb.co.com/CwcnXky/HP-Pavilion-x360.jpg",
+      "category": "Laptop",
+      "price": 849.99,
+      "description": "HP Pavilion x360 convertible laptop with 14-inch touch screen.",
+      "Specification": [
+        "14-inch FHD Touch Display",
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "Windows 11"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "P003",
+      "product_title": "Apple MacBook Air M1",
+      "product_image": "https://i.ibb.co.com/6bzmcZ2/Apple-Mac-Book-Air-M1.jpg",
+      "category": "MacBook",
+      "price": 999.99,
+      "description": "MacBook Air with M1 chip, 13.3-inch Retina display, and 256GB SSD.",
+      "Specification": [
+        "13.3-inch Retina Display",
+        "Apple M1 Chip",
+        "8GB RAM",
+        "256GB SSD",
+        "macOS Big Sur"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P004",
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://i.ibb.co.com/mvssGkg/apple-iphone-13-pro-3.jpg",
+      "category": "iPhone",
+      "price": 1099.99,
+      "description": "iPhone 13 Pro with A15 Bionic chip and 6.1-inch Super Retina XDR display.",
+      "Specification": [
+        "6.1-inch Super Retina XDR Display",
+        "A15 Bionic Chip",
+        "128GB Storage",
+        "iOS 15"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "P005",
+      "product_title": "Samsung Galaxy S22",
+      "product_image": "https://i.postimg.cc/L6SCxRhC/samsung-galaxy-s22-ultra-5g-2.jpg",
+      "category": "Android",
+      "price": 799.99,
+      "description": "Samsung Galaxy S22 with Exynos 2100 and 6.2-inch Dynamic AMOLED display.",
+      "Specification": [
+        "6.2-inch Dynamic AMOLED 2X",
+        "Exynos 2100",
+        "128GB Storage",
+        "Android 12"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P006",
+      "product_title": "Apple Watch Series 7",
+      "product_image": "https://i.postimg.cc/4yydgjxr/watch.jpg",
+      "category": "Smart Watch",
+      "price": 399.99,
+      "description": "Apple Watch Series 7 with larger display and faster charging.",
+      "Specification": [
+        "41mm Retina Display",
+        "Blood Oxygen Sensor",
+        "Heart Rate Monitor",
+        "watchOS 8"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P007",
+      "product_title": "Anker PowerCore 10000",
+      "product_image": "https://i.postimg.cc/W3H3h3fm/anker.jpg",
+      "category": "Accessory",
+      "price": 29.99,
+      "description": "Anker PowerCore 10000 portable charger with 10000mAh battery.",
+      "Specification": [
+        "10000mAh Capacity",
+        "PowerIQ Technology",
+        "Compact Design"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "P008",
+      "product_title": "Sony WH-1000XM4 Headphones",
+      "product_image": "https://i.postimg.cc/Dw1mz7TH/sony.webp",
+      "category": "Accessory",
+      "price": 349.99,
+      "description": "Noise-canceling wireless headphones with superior sound quality.",
+      "Specification": [
+        "Active Noise Canceling",
+        "Bluetooth",
+        "30-hour Battery Life",
+        "Touch Sensor Controls"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P009",
+      "product_title": "iPad Air (2022)",
+      "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+      "category": "Android",
+      "price": 599.99,
+      "description": "Apple iPad Air with M1 chip and 10.9-inch Liquid Retina display.",
+      "Specification": [
+        "10.9-inch Liquid Retina Display",
+        "Apple M1 Chip",
+        "64GB Storage",
+        "iPadOS 15"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P010",
+      "product_title": "Google Pixel 6",
+      "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+      "category": "Android",
+      "price": 599.99,
+      "description": "Google Pixel 6 with Google Tensor chip and 6.4-inch display.",
+      "Specification": [
+        "6.4-inch AMOLED Display",
+        "Google Tensor",
+        "128GB Storage",
+        "Android 12"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P011",
+      "product_title": "MacBook Pro 16-inch M1 Max",
+      "product_image": "https://i.ibb.co.com/6bzmcZ2/Apple-Mac-Book-Air-M1.jpg",
+      "category": "MacBook",
+      "price": 2999.99,
+      "description": "16-inch MacBook Pro with M1 Max chip, 32GB RAM, and 1TB SSD.",
+      "Specification": [
+        "16-inch Liquid Retina XDR Display",
+        "Apple M1 Max Chip",
+        "32GB RAM",
+        "1TB SSD",
+        "macOS Monterey"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "P012",
+      "product_title": "Dell Surface Laptop 4",
+      "product_image": "https://i.ibb.co.com/6WqVdj9/Dell-Inspiron-15.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "Microsoft Surface Laptop 4 with Intel Core i7 and 512GB SSD.",
+      "Specification": [
+        "13.5-inch PixelSense Display",
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "Windows 11"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P013",
+      "product_title": "Samsung Galaxy Watch 4",
+      "product_image": "https://i.postimg.cc/4yydgjxr/watch.jpg",
+      "category": "Smart Watch",
+      "price": 249.99,
+      "description": "Samsung Galaxy Watch 4 with Wear OS and health tracking features.",
+      "Specification": [
+        "1.4-inch Super AMOLED",
+        "Wear OS",
+        "ECG and Blood Oxygen Monitor",
+        "Heart Rate Tracking"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "P014",
+      "product_title": "Lenovo ThinkPad X1 Carbon Gen 9",
+      "product_image": "https://i.postimg.cc/FKpnL6hW/22a475e555d7-best-laptop-deals.jpg",
+      "category": "Laptop",
+      "price": 1549.99,
+      "description": "Lenovo ThinkPad X1 Carbon Gen 9 with Intel Core i7 and 16GB RAM.",
+      "Specification": [
+        "14-inch FHD Display",
+        "Intel Core i7",
+        "16GB RAM",
+        "512GB SSD",
+        "Windows 11 Pro"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P015",
+      "product_title": "iPhone 12 Mini",
+      "product_image": "https://i.ibb.co.com/mvssGkg/apple-iphone-13-pro-3.jpg",
+      "category": "iPhone",
+      "price": 699.99,
+      "description": "Compact iPhone 12 Mini with 5.4-inch Super Retina XDR display.",
+      "Specification": [
+        "5.4-inch Super Retina XDR Display",
+        "A14 Bionic Chip",
+        "64GB Storage",
+        "iOS 14"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": "P016",
+      "product_title": "JBL Flip 5 Bluetooth Speaker",
+      "product_image": "https://i.postimg.cc/MHtbN1s0/jbl.jpg",
+      "category": "Accessory",
+      "price": 119.99,
+      "description": "Portable waterproof Bluetooth speaker with rich bass.",
+      "Specification": [
+        "Waterproof IPX7",
+        "12 Hours Playtime",
+        "PartyBoost Technology",
+        "Bluetooth 4.2"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "P017",
+      "product_title": "ASUS ROG Zephyrus G14",
+      "product_image": "https://i.postimg.cc/FKpnL6hW/22a475e555d7-best-laptop-deals.jpg",
+      "category": "Laptop",
+      "price": 1449.99,
+      "description": "Gaming laptop with AMD Ryzen 9 and NVIDIA GeForce RTX 3060.",
+      "Specification": [
+        "14-inch QHD Display",
+        "AMD Ryzen 9",
+        "16GB RAM",
+        "1TB SSD",
+        "Windows 10"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "P018",
+      "product_title": "Apple AirPods Pro",
+      "product_image": "https://i.postimg.cc/bNszZpQL/Aipord-Pro-1-600x600.png",
+      "category": "Accessory",
+      "price": 249.99,
+      "description": "Apple AirPods Pro with active noise cancellation and spatial audio.",
+      "Specification": [
+        "Active Noise Cancellation",
+        "Transparency Mode",
+        "Spatial Audio",
+        "Wireless Charging Case"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P019",
+      "product_title": "Huawei MateBook X Pro",
+      "product_image": "https://i.postimg.cc/FKpnL6hW/22a475e555d7-best-laptop-deals.jpg",
+      "category": "Laptop",
+      "price": 1399.99,
+      "description": "Ultra-slim laptop with 3K touch screen and Intel Core i7 processor.",
+      "Specification": [
+        "13.9-inch 3K Touch Display",
+        "Intel Core i7",
+        "16GB RAM",
+        "1TB SSD",
+        "Windows 10"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "P020",
+      "product_title": "OnePlus 9 Pro",
+      "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+      "category": "Android",
+      "price": 969.99,
+      "description": "OnePlus 9 Pro with Snapdragon 888 and Hasselblad Camera for Mobile.",
+      "Specification": [
+        "6.7-inch Fluid AMOLED",
+        "Snapdragon 888",
+        "128GB Storage",
+        "Android 11"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "P021",
+      "product_title": "Apple MacBook Air M2",
+      "product_image": "https://i.ibb.co.com/6bzmcZ2/Apple-Mac-Book-Air-M1.jpg",
+      "category": "MacBook",
+      "price": 1199.99,
+      "description": "MacBook Air with M2 chip, 13.6-inch Liquid Retina display.",
+      "Specification": [
+        "13.6-inch Liquid Retina Display",
+        "Apple M2 Chip",
+        "8GB RAM",
+        "256GB SSD",
+        "macOS Monterey"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+        "product_id": "P022",
+        "product_title": "Samsung Galaxy S8",
+        "product_image": "https://i.postimg.cc/L6SCxRhC/samsung-galaxy-s22-ultra-5g-2.jpg",
+        "category": "Android",
+        "price": 799.99,
+        "description": "Samsung Galaxy Tab S8 with a large 11-inch display and S-Pen support.",
+        "Specification": [
+          "11-inch TFT Display",
+          "Qualcomm Snapdragon 8 Gen 1",
+          "128GB Storage",
+          "Android 12"
+        ],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "P023",
+        "product_title": "Garmin Forerunner 945",
+        "product_image": "https://i.postimg.cc/4yydgjxr/watch.jpg",
+        "category": "Smart Watch",
+        "price": 599.99,
+        "description": "High-performance Garmin GPS smartwatch for athletes.",
+        "Specification": [
+          "1.2-inch Display",
+          "Built-in GPS",
+          "VO2 Max and Heart Rate Monitor",
+          "7-day Battery Life"
+        ],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "P024",
+        "product_title": "Sony Xperia 1 III",
+        "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+        "category": "Android",
+        "price": 1299.99,
+        "description": "Sony's flagship Xperia phone with advanced photography features.",
+        "Specification": [
+          "6.5-inch OLED 4K HDR Display",
+          "Snapdragon 888",
+          "12GB RAM",
+          "128GB Storage",
+          "Android 11"
+        ],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "P025",
+        "product_title": "ASUS ZenBook Flip 13",
+        "product_image": "https://i.postimg.cc/FKpnL6hW/22a475e555d7-best-laptop-deals.jpg",
+        "category": "Laptop",
+        "price": 999.99,
+        "description": "Convertible laptop with a sleek design and Intel Evo certification.",
+        "Specification": [
+          "13.3-inch OLED Touch Display",
+          "Intel Core i7",
+          "16GB RAM",
+          "512GB SSD",
+          "Windows 10"
+        ],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "P026",
+        "product_title": "Apple iPhone SE (2022)",
+        "product_image": "https://i.ibb.co.com/mvssGkg/apple-iphone-13-pro-3.jpg",
+        "category": "iPhone",
+        "price": 429.99,
+        "description": "Compact iPhone SE with A15 Bionic chip and Touch ID.",
+        "Specification": [
+          "4.7-inch Retina HD Display",
+          "A15 Bionic Chip",
+          "64GB Storage",
+          "iOS 15"
+        ],
+        "availability": true,
+        "rating": 4.2
+      },
+      {
+        "product_id": "P027",
+        "product_title": "Bose SoundLink Revolve+ II",
+        "product_image": "https://i.postimg.cc/brSQv4LJ/sp.jpg",
+        "category": "Accessory",
+        "price": 329.99,
+        "description": "Portable Bluetooth speaker with 360-degree sound.",
+        "Specification": [
+          "360-degree Sound",
+          "17-hour Battery Life",
+          "Water-resistant (IPX4)"
+        ],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "P028",
+        "product_title": "Razer Blade 15 Advanced",
+        "product_image": "https://i.postimg.cc/FKpnL6hW/22a475e555d7-best-laptop-deals.jpg",
+        "category": "Laptop",
+        "price": 2599.99,
+        "description": "High-performance gaming laptop with NVIDIA RTX 3080.",
+        "Specification": [
+          "15.6-inch FHD 360Hz Display",
+          "Intel Core i7",
+          "16GB RAM",
+          "1TB SSD",
+          "Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "P029",
+        "product_title": "Google Nest Hub (2nd Gen)",
+        "product_image": "https://i.postimg.cc/50VcpMQc/s-budds.webp",
+        "category": "Accessory",
+        "price": 99.99,
+        "description": "Smart display with Google Assistant and sleep tracking.",
+        "Specification": [
+          "7-inch Display",
+          "Sleep Sensing",
+          "Voice Control",
+          "Wi-Fi and Bluetooth"
+        ],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "P030",
+        "product_title": "OnePlus Nord 2",
+        "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+        "category": "Android",
+        "price": 399.99,
+        "description": "Affordable OnePlus phone with MediaTek Dimensity 1200.",
+        "Specification": [
+          "6.43-inch AMOLED",
+          "MediaTek Dimensity 1200",
+          "8GB RAM",
+          "128GB Storage",
+          "Android 11"
+        ],
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "P031",
+        "product_title": "Apple iPad Mini (6th Gen)",
+        "product_image": "https://i.ibb.co.com/mvssGkg/apple-iphone-13-pro-3.jpg",
+        "category": "iPhone",
+        "price": 499.99,
+        "description": "Compact iPad Mini with A15 Bionic chip and Liquid Retina display.",
+        "Specification": [
+          "8.3-inch Liquid Retina",
+          "Apple A15 Bionic",
+          "64GB Storage",
+          "iPadOS 15"
+        ],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "P032",
+        "product_title": "Fitbit Charge 5",
+        "product_image": "https://i.postimg.cc/4yydgjxr/watch.jpg",
+        "category": "Smart Watch",
+        "price": 179.99,
+        "description": "Advanced health and fitness tracker with ECG and SpO2 sensors.",
+        "Specification": [
+          "AMOLED Display",
+          "ECG App",
+          "SpO2 Monitoring",
+          "7-day Battery Life"
+        ],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "P033",
+        "product_title": "Lenovo Yoga 7i",
+        "product_image": "https://i.postimg.cc/FKpnL6hW/22a475e555d7-best-laptop-deals.jpg",
+        "category": "Laptop",
+        "price": 899.99,
+        "description": "Convertible laptop with a touch screen and Intel Evo certification.",
+        "Specification": [
+          "14-inch FHD Touch Display",
+          "Intel Core i5",
+          "8GB RAM",
+          "512GB SSD",
+          "Windows 10"
+        ],
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "P034",
+        "product_title": "Samsung Galaxy Buds Pro",
+        "product_image": "https://i.postimg.cc/50VcpMQc/s-budds.webp",
+        "category": "Accessory",
+        "price": 199.99,
+        "description": "Wireless earbuds with active noise cancellation.",
+        "Specification": [
+          "Active Noise Cancelation",
+          "Bluetooth 5.0",
+          "IPX7 Water Resistance",
+          "Up to 28 Hours Playtime"
+        ],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "P035",
+        "product_title": "MacBook Pro 14-inch M1 Pro",
+        "product_image": "https://i.ibb.co.com/6bzmcZ2/Apple-Mac-Book-Air-M1.jpg",
+        "category": "MacBook",
+        "price": 1999.99,
+        "description": "14-inch MacBook Pro with Apple's M1 Pro chip for advanced users.",
+        "Specification": [
+          "14-inch Liquid Retina XDR Display",
+          "Apple M1 Pro Chip",
+          "16GB RAM",
+          "512GB SSD",
+          "macOS Monterey"
+        ],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "P036",
+        "product_title": "Oppo Find X5 Pro",
+        "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+        "category": "Android",
+        "price": 999.99,
+        "description": "High-end Oppo phone with powerful specs and Hasselblad partnership.",
+        "Specification": [
+          "6.7-inch AMOLED",
+          "Snapdragon 8 Gen 1",
+          "256GB Storage",
+          "Android 12"
+        ],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "P037",
+        "product_title": "Google Pixel 6 Pro",
+        "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+        "category": "Android",
+        "price": 899.99,
+        "description": "Google's Pixel 6 Pro with Google Tensor chip and advanced camera.",
+        "Specification": [
+          "6.71-inch AMOLED",
+          "Google Tensor",
+          "128GB Storage",
+          "Android 12"
+        ],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "P038",
+        "product_title": "Xiaomi Mi 11 Ultra",
+        "product_image": "https://i.postimg.cc/wjCskxj3/unnamed.png",
+        "category": "Android",
+        "price": 749.99,
+        "description": "Powerful Xiaomi smartphone with impressive camera setup.",
+        "Specification": [
+          "6.81-inch AMOLED",
+          "Snapdragon 888",
+          "12GB RAM",
+          "256GB Storage",
+          "Android 11"
+        ],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "P039",
+        "product_title": "Microsoft Surface Laptop Studio",
+        "product_image": "https://i.postimg.cc/FKpnL6hW/22a475e555d7-best-laptop-deals.jpg",
+        "category": "Laptop",
+        "price": 1599.99,
+        "description": "Creative-focused laptop with 120Hz display and touch support.",
+        "Specification": [
+          "14.4-inch PixelSense Flow Display",
+          "Intel Core i7",
+          "16GB RAM",
+          "512GB SSD",
+          "Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "P040",
+        "product_title": "Amazfit GTR 3 Pro",
+        "product_image": "https://i.postimg.cc/4yydgjxr/watch.jpg",
+        "category": "Smart Watch",
+        "price": 229.99,
+        "description": "Premium smartwatch with long battery life and health tracking features.",
+        "Specification": [
+          "1.45-inch AMOLED Display",
+          "Bluetooth 5.0",
+          "14-day Battery Life",
+          "SpO2 Monitoring"
+        ],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "P041",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/6WqVdj9/Dell-Inspiron-15.jpg",
+        "category": "Laptop",
+        "price": 999.99,
+        "description": "Ultra-portable laptop with high-resolution display and Intel processor.",
+        "Specification": [
+          "13.4-inch FHD Display",
+          "Intel Core i5",
+          "8GB RAM",
+          "256GB SSD",
+          "Windows 10"
+        ],
+        "availability": true,
+        "rating": 4.6
+      }
+]

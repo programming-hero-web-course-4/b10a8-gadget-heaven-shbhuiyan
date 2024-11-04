@@ -19,7 +19,7 @@ const Home = () => {
                     <NavLink to='/watch' className="px-6 py-3 bg-base-300 rounded-full hover:scale-105 duration-500 hover:border-2 hover:border-purple-500 border-2 border-transparent">Smart Watches</NavLink>
                     <NavLink to='/accessories' className="px-6 py-3 bg-base-300 rounded-full hover:scale-105 duration-500 hover:border-2 hover:border-purple-500 border-2 border-transparent">Accessories</NavLink>
                 </div>
-                <div className="w-3/4 border-2 border-red-500">
+                <div className="w-3/4 border-2 rounded-xl">
                     <Outlet></Outlet>
                 </div>
             </div>
