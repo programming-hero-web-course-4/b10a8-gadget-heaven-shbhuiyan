@@ -4,7 +4,7 @@ const Banner = () => {
 
 
   return (
-    <div className="hero pt-6 pb-20 md:pb-64 relative">
+    <div className="hero rounded-b-xl pt-6 pb-20 md:pb-64 relative text-white bg-gradient-to-t from-purple-700 to-purple-500 md:px-10 mb-64">
       <div className="hero-content text-center">
         <div className="max-w-4xl">
           <h1 className="text-5xl font-bold md:leading-normal">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>

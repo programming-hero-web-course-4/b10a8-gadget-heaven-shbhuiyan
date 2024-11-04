@@ -9,6 +9,8 @@ import Iphone from "../Components/HomeNested/Iphone/Iphone";
 import Android from "../Components/HomeNested/Android/Android";
 import SmartWatches from "../Components/HomeNested/SmartWatches/SmartWatches";
 import Accessories from "../Components/HomeNested/Accessories/Accessories";
+import Statistics from "../Pages/Statistics/Statistics";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
     {
@@ -56,9 +58,17 @@ const router = createBrowserRouter([
                         element:<Accessories></Accessories>
                     },
                 ]
+            },
+            {
+                path:'/statistics',
+                element:<Statistics></Statistics>
+            },
+            {
+                path:'/dashboard',
+                element:<Dashboard></Dashboard>
             }
         ]
-    }
+    },
 ])
 
 

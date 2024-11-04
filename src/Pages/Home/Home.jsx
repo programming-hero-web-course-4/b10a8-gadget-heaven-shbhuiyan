@@ -1,5 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import './Home.css'
+import Banner from "../../Components/Banner/Banner";
+import Footer from "../../Components/Footer/Footer";
 
 
 const Home = () => {
@@ -7,7 +9,9 @@ const Home = () => {
 
 
     return (
-        <div id="home" className="p-5 space-y-10">
+        <div className="space-y-20">
+            <Banner></Banner>
+            <div id="home" className="p-5 space-y-10">
             <h1 className="text-3xl md:text-6xl font-bold text-center">Explore Cutting Edge Gadgets</h1>
             <div className="lg:flex justify-center items-start gap-6 max-lg:space-y-8">
                 <div id="categories" className="lg:w-1/4 text-2xl font-semibold p-8  text-gray-700 border-2 rounded-xl flex flex-col gap-5">
@@ -23,6 +27,8 @@ const Home = () => {
                     <Outlet></Outlet>
                 </div>
             </div>
+        </div>
+        <Footer></Footer>
         </div>
     );
 };
