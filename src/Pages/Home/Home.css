@@ -1,0 +1,4 @@
+#categories > a.active{
+    color: white;
+    background-color: blueviolet;
+}

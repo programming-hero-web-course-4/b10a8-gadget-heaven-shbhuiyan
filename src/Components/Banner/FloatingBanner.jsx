@@ -2,8 +2,8 @@ import banner from '../../assets/banner.jpg'
 
 const FloatingBanner = () => {
     return (
-        <div className='p-4 border-2 max-w-5xl rounded-xl backdrop-blur-xl absolute -bottom-20 md:-bottom-48  lg:top-80'>
-            <img className='w-full' src={banner} alt="" />
+        <div className='p-4 border-2 w-4/5 lg:h-3/4 rounded-xl backdrop-blur-xl absolute -bottom-36 lg:-bottom-48'>
+            <img className='h-full w-full' src={banner} alt="" />
         </div>
     );
 };

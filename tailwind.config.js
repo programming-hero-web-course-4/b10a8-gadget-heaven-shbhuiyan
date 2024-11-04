@@ -10,7 +10,7 @@ export default {
     extend: {
       fontFamily:{
         lora: "Lora"
-      }
+      },
     },
   },
   plugins: [daisyui],
