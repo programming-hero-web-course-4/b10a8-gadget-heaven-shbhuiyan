@@ -22,31 +22,37 @@ const router = createBrowserRouter([
                 children:[
                     {
                         path:'/',
-                        loader:()=> fetch('/public/Products.json'),
+                        loader:()=> fetch('Products.json'),
                         element:<AllProducts></AllProducts>
                     },
                     {
                         path:'/laptop',
+                        loader:()=> fetch('Products.json'),
                         element:<Laptop></Laptop>
                     },
                     {
                         path:'/mac',
+                        loader:()=> fetch('Products.json'),
                         element:<MacBook></MacBook>
                     },
                     {
                         path:'/ios',
+                        loader:()=> fetch('Products.json'),
                         element:<Iphone></Iphone>
                     },
                     {
                         path:'/android',
+                        loader:()=> fetch('Products.json'),
                         element:<Android></Android>
                     },
                     {
                         path:'/watch',
+                        loader:()=> fetch('Products.json'),
                         element:<SmartWatches></SmartWatches>
                     },
                     {
                         path:'/accessories',
+                        loader:()=> fetch('Products.json'),
                         element:<Accessories></Accessories>
                     },
                 ]
