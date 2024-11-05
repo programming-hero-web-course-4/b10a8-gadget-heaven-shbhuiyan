@@ -12,6 +12,8 @@ import Accessories from "../Components/HomeNested/Accessories/Accessories";
 import Statistics from "../Pages/Statistics/Statistics";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import DetailsBanner from "../Components/Details/DetailsBanner";
+import Cart from "../Components/DashNested/cart/Cart";
+import Wishlist from "../Components/DashNested/Wishlist/Wishlist";
 
 const router = createBrowserRouter([
     {
@@ -66,7 +68,17 @@ const router = createBrowserRouter([
             },
             {
                 path:'/dashboard',
-                element:<Dashboard></Dashboard>
+                element:<Dashboard></Dashboard>,
+                children:[
+                    {
+                        path:'/dashboard',
+                        element:<Cart></Cart>
+                    },
+                    {
+                        path:'/dashboard/wishlist',
+                        element:<Wishlist></Wishlist>
+                    },
+                ]
             },
             {
                 path:'/details/:id',

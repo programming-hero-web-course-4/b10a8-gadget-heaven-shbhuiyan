@@ -1,0 +1,9 @@
+#dashboard a.active{
+    background-color: white;
+    color: blueviolet;
+}
+
+#dashboard a.pending{
+    background-color: transparent;
+    color: white;
+}
