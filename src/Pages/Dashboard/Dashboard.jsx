@@ -1,9 +1,14 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import './dashboard.css'
+import { useEffect } from "react";
 
 const Dashboard = () => {
 
     const location = useLocation();
+
+    useEffect(()=>{
+
+    },[])
 
     return (
         <div>

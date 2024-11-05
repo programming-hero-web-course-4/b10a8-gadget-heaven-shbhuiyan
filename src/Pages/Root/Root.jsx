@@ -6,9 +6,9 @@ import Footer from "../../Components/Footer/Footer";
 const Root = () => {
     return (
             <div className="container md:w-11/12 mx-auto font-lora">
-                <Navbar></Navbar>
-                <Outlet></Outlet>
-                <Footer></Footer>
+                    <Navbar></Navbar>
+                    <Outlet></Outlet>
+                    <Footer></Footer>
             </div>
     );
 };

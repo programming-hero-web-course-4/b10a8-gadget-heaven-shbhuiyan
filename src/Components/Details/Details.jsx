@@ -3,6 +3,7 @@ import { BsCart4 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router-dom";
 
+
 const Details = () => {
   const [detail, setDetail] = useState([]);
 

@@ -48,8 +48,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4 text-black">
-        <Link to='/dashboard' className="text-xl p-2 border bg-white rounded-full"><FaCartPlus /></Link>
-        <Link to='/dashboard' className="text-xl p-2 border bg-white rounded-full"><FaRegHeart /></Link>
+        <Link to='/dashboard' className="relative text-xl p-2 border bg-white rounded-full"><FaCartPlus />
+        <span className="absolute -top-2 -right-1 text-sm bg-red-600 rounded-full px-2 text-white">0</span>
+        </Link>
+        <Link to='/dashboard/wishlist' className="text-xl p-2 border bg-white rounded-full"><FaRegHeart /></Link>
       </div>
     </div>
   );

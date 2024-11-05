@@ -12,82 +12,82 @@ import Accessories from "../Components/HomeNested/Accessories/Accessories";
 import Statistics from "../Pages/Statistics/Statistics";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import DetailsBanner from "../Components/Details/DetailsBanner";
-import Cart from "../Components/DashNested/cart/Cart";
+import Carts from "../Components/DashNested/Carts/Carts";
 import Wishlist from "../Components/DashNested/Wishlist/Wishlist";
 
 const router = createBrowserRouter([
-    {
-        path:'/',
-        element:<Root></Root>,
-        errorElement:<ErrorPage></ErrorPage>,
-        children:[
-            {
-                path:'/',
-                element:<Home></Home>,
-                children:[
-                    {
-                        path:'/',
-                        loader:()=> fetch('/Products.json'),
-                        element:<AllProducts></AllProducts>
-                    },
-                    {
-                        path:'/laptop',
-                        loader:()=> fetch('/Products.json'),
-                        element:<Laptop></Laptop>
-                    },
-                    {
-                        path:'/mac',
-                        loader:()=> fetch('/Products.json'),
-                        element:<MacBook></MacBook>
-                    },
-                    {
-                        path:'/ios',
-                        loader:()=> fetch('/Products.json'),
-                        element:<Iphone></Iphone>
-                    },
-                    {
-                        path:'/android',
-                        loader:()=> fetch('/Products.json'),
-                        element:<Android></Android>
-                    },
-                    {
-                        path:'/watch',
-                        loader:()=> fetch('/Products.json'),
-                        element:<SmartWatches></SmartWatches>
-                    },
-                    {
-                        path:'/accessories',
-                        loader:()=> fetch('/Products.json'),
-                        element:<Accessories></Accessories>
-                    },
-                ]
-            },
-            {
-                path:'/statistics',
-                element:<Statistics></Statistics>
-            },
-            {
-                path:'/dashboard',
-                element:<Dashboard></Dashboard>,
-                children:[
-                    {
-                        path:'/dashboard',
-                        element:<Cart></Cart>
-                    },
-                    {
-                        path:'/dashboard/wishlist',
-                        element:<Wishlist></Wishlist>
-                    },
-                ]
-            },
-            {
-                path:'/details/:id',
-                loader:()=> fetch('/Products.json'),
-                element:<DetailsBanner></DetailsBanner>
-            }
-        ]
-    },
-])
-
+  {
+    path: "/",
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+        children: [
+          {
+            path: "/",
+            loader: () => fetch("/Products.json"),
+            element: <AllProducts></AllProducts>,
+          },
+          {
+            path: "/laptop",
+            loader: () => fetch("/Products.json"),
+            element: <Laptop></Laptop>,
+          },
+          {
+            path: "/mac",
+            loader: () => fetch("/Products.json"),
+            element: <MacBook></MacBook>,
+          },
+          {
+            path: "/ios",
+            loader: () => fetch("/Products.json"),
+            element: <Iphone></Iphone>,
+          },
+          {
+            path: "/android",
+            loader: () => fetch("/Products.json"),
+            element: <Android></Android>,
+          },
+          {
+            path: "/watch",
+            loader: () => fetch("/Products.json"),
+            element: <SmartWatches></SmartWatches>,
+          },
+          {
+            path: "/accessories",
+            loader: () => fetch("/Products.json"),
+            element: <Accessories></Accessories>,
+          },
+        ],
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: "/dashboard",
+            loader: () => fetch("/Products.json"),
+            element: <Carts></Carts>,
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <Wishlist></Wishlist>,
+          },
+        ],
+      },
+      {
+        path: "/details/:id",
+        loader: () => fetch("/Products.json"),
+        element: <DetailsBanner></DetailsBanner>,
+      },
+    ],
+  },
+]);
 
 export default router;
