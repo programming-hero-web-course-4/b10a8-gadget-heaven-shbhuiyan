@@ -11,7 +11,7 @@ import SmartWatches from "../Components/HomeNested/SmartWatches/SmartWatches";
 import Accessories from "../Components/HomeNested/Accessories/Accessories";
 import Statistics from "../Pages/Statistics/Statistics";
 import Dashboard from "../Pages/Dashboard/Dashboard";
-import Details from "../Components/Details/Details";
+import DetailsBanner from "../Components/Details/DetailsBanner";
 
 const router = createBrowserRouter([
     {
@@ -25,37 +25,37 @@ const router = createBrowserRouter([
                 children:[
                     {
                         path:'/',
-                        loader:()=> fetch('Products.json'),
+                        loader:()=> fetch('/Products.json'),
                         element:<AllProducts></AllProducts>
                     },
                     {
                         path:'/laptop',
-                        loader:()=> fetch('Products.json'),
+                        loader:()=> fetch('/Products.json'),
                         element:<Laptop></Laptop>
                     },
                     {
                         path:'/mac',
-                        loader:()=> fetch('Products.json'),
+                        loader:()=> fetch('/Products.json'),
                         element:<MacBook></MacBook>
                     },
                     {
                         path:'/ios',
-                        loader:()=> fetch('Products.json'),
+                        loader:()=> fetch('/Products.json'),
                         element:<Iphone></Iphone>
                     },
                     {
                         path:'/android',
-                        loader:()=> fetch('Products.json'),
+                        loader:()=> fetch('/Products.json'),
                         element:<Android></Android>
                     },
                     {
                         path:'/watch',
-                        loader:()=> fetch('Products.json'),
+                        loader:()=> fetch('/Products.json'),
                         element:<SmartWatches></SmartWatches>
                     },
                     {
                         path:'/accessories',
-                        loader:()=> fetch('Products.json'),
+                        loader:()=> fetch('/Products.json'),
                         element:<Accessories></Accessories>
                     },
                 ]
@@ -70,8 +70,8 @@ const router = createBrowserRouter([
             },
             {
                 path:'/details/:id',
-                loader:()=> fetch('Products.json'),
-                element:<Details></Details>
+                loader:()=> fetch('/Products.json'),
+                element:<DetailsBanner></DetailsBanner>
             }
         ]
     },
