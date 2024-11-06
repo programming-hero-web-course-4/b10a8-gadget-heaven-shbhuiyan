@@ -30,6 +30,16 @@ const addToStoredCarts = (id) => {
 
 
 
+// remove item from cart
+
+const removeCartFromLS = (id) => {
+    const carts = getStoredCarts();
+    const remainingCarts = carts.filter(cartId => cartId !== id);
+    localStorage.setItem("carts",remainingCarts)
+}
+
+
+
 // for wishList 
 
 const getStoredWishlist = () => {
@@ -60,5 +70,17 @@ const addStoredWishlist = (id) => {
 
 
 
+// remove item from wishlist
 
-export {addToStoredCarts, getStoredCarts, addStoredWishlist,getStoredWishlist};
+const removeWishlistFromLS = (id) => {
+    const wishlist = getStoredWishlist();
+    const remainingWL = wishlist.filter(listId => listId !== id);
+    localStorage.setItem("wishlist",remainingWL)
+}
+
+
+
+
+
+
+export {addToStoredCarts, getStoredCarts, addStoredWishlist,getStoredWishlist,removeCartFromLS,removeWishlistFromLS};

@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import { getStoredCarts } from "../../Utilites/Utilites";
+import { getStoredCarts, removeCartFromLS } from "../../Utilites/Utilites";
 import Cart from "./Cart/Cart";
 import { useEffect, useState } from "react";
 
@@ -12,8 +12,13 @@ const Carts = () => {
     const getId = getStoredCarts();
     const addToCart = allProducts.filter(product =>getId.includes(product.product_id))
     setCarts(addToCart)
-
   },[allProducts])
+
+  const handleRemove = (id) => {
+    removeCartFromLS(id)
+    const remainingCart = carts.filter(product => product.product_id !== id);
+    setCarts(remainingCart);
+  }
 
   return (
     <div className="md:w-10/12 mx-auto my-10 space-y-10">
@@ -35,7 +40,7 @@ const Carts = () => {
       </div>
       <div className="space-y-5">
         {
-          carts.map((cart, i)=> <Cart key={i} cart={cart}></Cart>)
+          carts.map((cart, i)=> <Cart key={i} cart={cart} handleRemove={handleRemove}></Cart>)
         }
       </div>
     </div>
