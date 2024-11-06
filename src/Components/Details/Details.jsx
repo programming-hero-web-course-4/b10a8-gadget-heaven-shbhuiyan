@@ -26,7 +26,8 @@ const Details = () => {
   };
   const handleWishlist = (id) => {
     addStoredWishlist(id)
-    
+    setIsDisabled(true)
+
   }
 
   return (
@@ -62,7 +63,7 @@ const Details = () => {
         </div>
         <div className="flex items-center gap-8">
           <button onClick={()=>handleAddToCart(product_id)} className="flex items-center gap-4 font-semibold text-lg px-6 py-2 bg-purple-600 text-white rounded-full hover:scale-105 duration-500">Add To Cart <BsCart4 className="text-xl" /></button>
-          <button onClick={()=>handleWishlist(product_id)} className="text-xl p-2 border-2 bg-white rounded-full hover:border-purple-600 duration-500"><FaRegHeart /></button>
+          <button onClick={()=>handleWishlist(product_id)} className={`${isDisabled ? "text-xl p-2 border-2 bg-gray-500 text-white rounded-full" : "text-xl p-2 border-2 bg-white rounded-full hover:border-purple-600 duration-500"}`} disabled={isDisabled} ><FaRegHeart /></button>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { clearItemsFromCart, getStoredCarts, removeCartFromLS } from "../../Utilites/Utilites";
 import Cart from "./Cart/Cart";
 import { useEffect, useState } from "react";
+import popup from '../../../assets/Group.png'
 
 const Carts = () => {
   const [carts, setCarts] = useState([]);
@@ -22,9 +23,9 @@ const Carts = () => {
 
   const handlePurchase = () => {
     clearItemsFromCart()
-    setCarts([]);
     if(carts.length > 0) {
       document.getElementById('my_modal_5').showModal();
+      setCarts([]);
     }else{
       alert("please chose your products")
     }
@@ -56,13 +57,14 @@ const Carts = () => {
 
         {/* Modal Show in Purchase */}
           <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-           <div className="modal-box">
-             <h3 className="font-bold text-lg">Hello!</h3>
-             <p className="py-4">Press ESC key or click the button below to close</p>
-             <div className="modal-action">
+           <div className="modal-box w-96 mx-auto text-center">
+            <img className="mx-auto" src={popup} alt="" />
+             <h3 className="font-bold text-2xl">Payment Successfully</h3>
+             <p className="py-4">Thanks for purchasing.</p>
+             <div className="modal-action block">
                <form method="dialog">
                  {/* if there is a button in form, it will close the modal */}
-                 <button className="btn">Close</button>
+                 <button className="btn w-full rounded-full">Close</button>
                </form>
              </div>
            </div>
