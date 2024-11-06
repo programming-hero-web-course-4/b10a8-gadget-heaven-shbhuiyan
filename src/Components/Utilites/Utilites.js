@@ -1,3 +1,5 @@
+// for carts
+
 const getStoredCarts = ()  =>{
     const storedCartsStr = localStorage.getItem("carts");
 
@@ -26,4 +28,37 @@ const addToStoredCarts = (id) => {
     }
 }
 
-export {addToStoredCarts, getStoredCarts};
+
+
+// for wishList 
+
+const getStoredWishlist = () => {
+    const storedWishlistStr = localStorage.getItem("wishlist")
+
+    if(storedWishlistStr){
+        const getWishlistObj = JSON.parse(storedWishlistStr);
+        return getWishlistObj;
+    }else{
+        return [];
+    }
+}
+
+
+
+const addStoredWishlist = (id) => {
+    const storedWishlist = getStoredWishlist();
+
+    if(storedWishlist.includes(id)){
+        alert(id,"exist")
+    }else{
+        storedWishlist.push(id);
+        alert('added');
+        const storedWishlistStr = JSON.stringify(storedWishlist);
+        localStorage.setItem("wishlist", storedWishlistStr);
+    }
+}
+
+
+
+
+export {addToStoredCarts, getStoredCarts, addStoredWishlist,getStoredWishlist};

@@ -1,8 +1,16 @@
 import { FaCartPlus, FaRegHeart } from "react-icons/fa";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import './Navbar.css'
+import { useEffect, useState } from "react";
+import { getStoredCarts } from "../Utilites/Utilites";
 
 const Navbar = () => {
+  const [count, setCount] = useState([])
+
+    useEffect(()=>{
+      const totalCart = getStoredCarts();
+      setCount(totalCart)
+    },[])
 
     const location = useLocation();
 
@@ -49,7 +57,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end gap-4 text-black">
         <Link to='/dashboard' className="relative text-xl p-2 border bg-white rounded-full"><FaCartPlus />
-        <span className="absolute -top-2 -right-1 text-sm bg-red-600 rounded-full px-2 text-white">0</span>
+        <span className="absolute -top-2 -right-1 text-sm bg-red-600 rounded-full px-2 text-white">{count.length}</span>
         </Link>
         <Link to='/dashboard/wishlist' className="text-xl p-2 border bg-white rounded-full"><FaRegHeart /></Link>
       </div>
