@@ -1,4 +1,7 @@
+import { toast } from "react-toastify";
 // for carts
+
+
 
 const getStoredCarts = ()  =>{
     const storedCartsStr = localStorage.getItem("carts");
@@ -18,11 +21,11 @@ const addToStoredCarts = (id) => {
     const storedCarts = getStoredCarts();
     
     if(storedCarts.includes(id)){
-        alert(id,"exist")
+        toast.error('This item already exist',{position:"top-center"})
     }
     else{
         storedCarts.push(id);
-        alert('added')
+        toast.success('Successfully added to your cart',{position:"top-center"})
         const storedCartsStr = JSON.stringify(storedCarts);
         localStorage.setItem("carts", storedCartsStr)
     }
@@ -59,10 +62,10 @@ const addStoredWishlist = (id) => {
     const storedWishlist = getStoredWishlist();
 
     if(storedWishlist.includes(id)){
-        alert(id,"exist")
+        toast.error('this is already exist',{position:"top-center"})
     }else{
         storedWishlist.push(id);
-        alert('added');
+        toast.success('Successfully added to your Wishlist',{position:"top-center"})
         const storedWishlistStr = JSON.stringify(storedWishlist);
         localStorage.setItem("wishlist", storedWishlistStr);
     }

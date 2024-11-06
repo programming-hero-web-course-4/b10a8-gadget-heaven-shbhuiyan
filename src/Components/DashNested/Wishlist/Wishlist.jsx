@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredWishlist, removeWishlistFromLS } from "../../Utilites/Utilites";
 import Cart from "../Carts/Cart/Cart";
+import { toast } from "react-toastify";
 
 const Wishlist = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -18,6 +19,7 @@ const Wishlist = () => {
     removeWishlistFromLS(id)
     const newWishlist = wishlist.filter(product => product.product_id !== id);
     setWishlist(newWishlist)
+    toast.warning('Delete your product from Wishlist',{position:"top-right"})
   }
 
 

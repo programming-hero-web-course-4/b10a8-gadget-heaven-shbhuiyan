@@ -14,6 +14,7 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import DetailsBanner from "../Components/Details/DetailsBanner";
 import Carts from "../Components/DashNested/Carts/Carts";
 import Wishlist from "../Components/DashNested/Wishlist/Wishlist";
+import Another from "../Pages/FAQPage/FAQPage";
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
             element: <Wishlist></Wishlist>,
           },
         ],
+      },
+      {
+        path:'/FAQPage',
+        element:<Another></Another>
       },
       {
         path: "/details/:id",

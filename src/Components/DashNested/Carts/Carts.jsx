@@ -1,11 +1,13 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import { clearItemsFromCart, getStoredCarts, removeCartFromLS } from "../../Utilites/Utilites";
 import Cart from "./Cart/Cart";
 import { useEffect, useState } from "react";
 import popup from '../../../assets/Group.png'
+import { toast } from "react-toastify";
 
 const Carts = () => {
   const [carts, setCarts] = useState([]);
+  const navigate = useNavigate()
 
   const allProducts = useLoaderData();
 
@@ -19,19 +21,23 @@ const Carts = () => {
     removeCartFromLS(id)
     const remainingCart = carts.filter(product => product.product_id !== id);
     setCarts(remainingCart);
+    toast.warning('Delete your product from Cart',{position:"top-left"})
   }
 
   const handlePurchase = () => {
     clearItemsFromCart()
+    setCarts([]);
+    
     if(carts.length > 0) {
       document.getElementById('my_modal_5').showModal();
-      setCarts([]);
     }else{
-      alert("please chose your products")
+      toast.warn("You Don't have any items Please select your items",{position:"top-center"})
+      
     }
   }
 
   const totalPrice = carts.reduce((sum,item) => sum + item.price,0);
+  
 
   const sortByPrice = () => {
     const sortBy = [...carts].sort((a,b)=> a.price - b.price)
@@ -50,7 +56,7 @@ const Carts = () => {
                 Sort By Price
               </button>
             </div>
-            <button onClick={handlePurchase} className="hover:scale-105 duration-500 px-6 py-2 rounded-full bg-gradient-to-b from-purple-600 to to-orange-400 text-lg font-semibold text-white">
+            <button onClick={handlePurchase}  className="hover:scale-105 duration-500 px-6 py-2 rounded-full bg-gradient-to-b from-purple-600 to to-orange-400 text-lg font-semibold text-white">
               Purchase
             </button>
           </div>
@@ -64,7 +70,7 @@ const Carts = () => {
              <div className="modal-action block">
                <form method="dialog">
                  {/* if there is a button in form, it will close the modal */}
-                 <button className="btn w-full rounded-full">Close</button>
+                 <button onClick={()=> navigate('/')} className="btn w-full rounded-full">Close</button>
                </form>
              </div>
            </div>
@@ -84,3 +90,10 @@ const Carts = () => {
 };
 
 export default Carts;
+
+
+
+
+
+
+// {`${isDisabled ? "px-6 py-2 rounded-full bg-gray-400 text-lg font-semibold text-black" : "hover:scale-105 duration-500 px-6 py-2 rounded-full bg-gradient-to-b from-purple-600 to to-orange-400 text-lg font-semibold text-white"}`}
