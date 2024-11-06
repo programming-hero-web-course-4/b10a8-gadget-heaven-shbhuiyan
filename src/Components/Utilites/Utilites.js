@@ -35,7 +35,7 @@ const addToStoredCarts = (id) => {
 const removeCartFromLS = (id) => {
     const carts = getStoredCarts();
     const remainingCarts = carts.filter(cartId => cartId !== id);
-    localStorage.setItem("carts",remainingCarts)
+    localStorage.setItem("carts",JSON.stringify(remainingCarts))
 }
 
 
@@ -75,12 +75,17 @@ const addStoredWishlist = (id) => {
 const removeWishlistFromLS = (id) => {
     const wishlist = getStoredWishlist();
     const remainingWL = wishlist.filter(listId => listId !== id);
-    localStorage.setItem("wishlist",remainingWL)
+    localStorage.setItem("wishlist",JSON.stringify(remainingWL))
 }
 
 
 
 
+const clearItemsFromCart = () => {
+    localStorage.removeItem("carts")
+}
 
 
-export {addToStoredCarts, getStoredCarts, addStoredWishlist,getStoredWishlist,removeCartFromLS,removeWishlistFromLS};
+
+
+export {addToStoredCarts, getStoredCarts, addStoredWishlist,getStoredWishlist,removeCartFromLS,removeWishlistFromLS,clearItemsFromCart};

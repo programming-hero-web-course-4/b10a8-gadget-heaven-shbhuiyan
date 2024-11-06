@@ -1,10 +1,11 @@
 import { useLoaderData } from "react-router-dom";
-import { getStoredCarts, removeCartFromLS } from "../../Utilites/Utilites";
+import { clearItemsFromCart, getStoredCarts, removeCartFromLS } from "../../Utilites/Utilites";
 import Cart from "./Cart/Cart";
 import { useEffect, useState } from "react";
 
 const Carts = () => {
   const [carts, setCarts] = useState([]);
+  const [price , setPrice] = useState(1000)
 
   const allProducts = useLoaderData();
 
@@ -20,22 +21,50 @@ const Carts = () => {
     setCarts(remainingCart);
   }
 
+  const handlePurchase = () => {
+    clearItemsFromCart()
+    setCarts([]);
+    if(carts.length > 0) {
+      document.getElementById('my_modal_5').showModal();
+    }else{
+      alert("please chose your products")
+    }
+  }
+
+
   return (
     <div className="md:w-10/12 mx-auto my-10 space-y-10">
       <div className="flex justify-between items-center">
         <h3 className="text-2xl font-bold">Cart</h3>
         <div className="flex items-center gap-10">
-          <h3 className="text-2xl font-bold">Total Cost:</h3>
+          <h3 className="text-2xl font-bold">Total Cost: {price}</h3>
           <div className="flex justify-start items-center gap-4">
             <div className=" bg-gradient-to-b from-purple-600 to to-orange-400 rounded-full p-px hover:scale-105 duration-500">
               <button className="px-6 py-2  text-lg font-semibold rounded-full bg-white ">
                 Sort By Price
               </button>
             </div>
-            <button className="hover:scale-105 duration-500 px-6 py-2 rounded-full bg-gradient-to-b from-purple-600 to to-orange-400 text-lg font-semibold text-white">
+            <button onClick={handlePurchase} className="hover:scale-105 duration-500 px-6 py-2 rounded-full bg-gradient-to-b from-purple-600 to to-orange-400 text-lg font-semibold text-white">
               Purchase
             </button>
           </div>
+
+        {/* Modal Show in Purchase */}
+          <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+           <div className="modal-box">
+             <h3 className="font-bold text-lg">Hello!</h3>
+             <p className="py-4">Press ESC key or click the button below to close</p>
+             <div className="modal-action">
+               <form method="dialog">
+                 {/* if there is a button in form, it will close the modal */}
+                 <button className="btn">Close</button>
+               </form>
+             </div>
+           </div>
+          </dialog>
+
+
+
         </div>
       </div>
       <div className="space-y-5">
