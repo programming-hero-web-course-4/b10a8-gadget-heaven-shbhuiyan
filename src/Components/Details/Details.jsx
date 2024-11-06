@@ -7,6 +7,7 @@ import { addStoredWishlist, addToStoredCarts } from "../Utilites/Utilites";
 
 const Details = () => {
   const [detail, setDetail] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(false)
 
   const { id } = useParams();
   const AllProducts = useLoaderData();
@@ -25,6 +26,7 @@ const Details = () => {
   };
   const handleWishlist = (id) => {
     addStoredWishlist(id)
+    
   }
 
   return (

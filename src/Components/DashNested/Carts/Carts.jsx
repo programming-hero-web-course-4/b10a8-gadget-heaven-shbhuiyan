@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 const Carts = () => {
   const [carts, setCarts] = useState([]);
-  const [price , setPrice] = useState(1000)
 
   const allProducts = useLoaderData();
 
@@ -31,16 +30,22 @@ const Carts = () => {
     }
   }
 
+  const totalPrice = carts.reduce((sum,item) => sum + item.price,0);
+
+  const sortByPrice = () => {
+    const sortBy = [...carts].sort((a,b)=> a.price - b.price)
+    setCarts(sortBy)
+  }
 
   return (
     <div className="md:w-10/12 mx-auto my-10 space-y-10">
       <div className="flex justify-between items-center">
         <h3 className="text-2xl font-bold">Cart</h3>
         <div className="flex items-center gap-10">
-          <h3 className="text-2xl font-bold">Total Cost: {price}</h3>
+          <h3 className="text-2xl font-bold text-gray-600">Total Cost: <span className="text-amber-600">{totalPrice.toFixed(2)} $</span></h3>
           <div className="flex justify-start items-center gap-4">
             <div className=" bg-gradient-to-b from-purple-600 to to-orange-400 rounded-full p-px hover:scale-105 duration-500">
-              <button className="px-6 py-2  text-lg font-semibold rounded-full bg-white ">
+              <button onClick={sortByPrice} className="px-6 py-2  text-lg font-semibold rounded-full bg-white ">
                 Sort By Price
               </button>
             </div>
