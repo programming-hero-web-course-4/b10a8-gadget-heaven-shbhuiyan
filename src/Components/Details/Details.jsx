@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BsCart4 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToStoredCarts } from "../Utilites/Utilites";
 
 
 const Details = () => {
@@ -17,7 +18,11 @@ const Details = () => {
     setDetail(productDetail);
   }, [AllProducts, id]);
 
-  const { product_image, product_title, price, availability,description,Specification,rating} = detail;
+  const { product_image, product_title, price, availability,description,Specification,rating,product_id} = detail;
+
+  const handleAddToCart = (id) => {
+    addToStoredCarts(id)
+  }
 
   return (
 
@@ -51,7 +56,7 @@ const Details = () => {
               </div>
         </div>
         <div className="flex items-center gap-8">
-          <button className="flex items-center gap-4 font-semibold text-lg px-6 py-2 bg-purple-600 text-white rounded-full hover:scale-105 duration-500">Add To Cart <BsCart4 className="text-xl" /></button>
+          <button onClick={()=>handleAddToCart(product_id)} className="flex items-center gap-4 font-semibold text-lg px-6 py-2 bg-purple-600 text-white rounded-full hover:scale-105 duration-500">Add To Cart <BsCart4 className="text-xl" /></button>
           <button className="text-xl p-2 border-2 bg-white rounded-full hover:border-purple-600 duration-500"><FaRegHeart /></button>
         </div>
       </div>

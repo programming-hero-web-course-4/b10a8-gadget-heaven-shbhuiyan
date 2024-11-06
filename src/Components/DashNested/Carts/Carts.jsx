@@ -1,13 +1,22 @@
-// import { useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
+import { getStoredCarts } from "../../Utilites/Utilites";
 import Cart from "./Cart/Cart";
+import { useEffect, useState } from "react";
 
 const Carts = () => {
+  const [carts, setCarts] = useState([]);
 
+  const allProducts = useLoaderData();
 
-  // const allProducts = useLoaderData();
+  useEffect(()=>{
+    const getId = getStoredCarts();
+    const addToCart = allProducts.filter(product =>getId.includes(product.product_id))
+    setCarts(addToCart)
+
+  },[allProducts])
 
   return (
-    <div className="md:w-10/12 mx-auto my-10">
+    <div className="md:w-10/12 mx-auto my-10 space-y-10">
       <div className="flex justify-between items-center">
         <h3 className="text-2xl font-bold">Cart</h3>
         <div className="flex items-center gap-10">
@@ -24,7 +33,11 @@ const Carts = () => {
           </div>
         </div>
       </div>
-      <Cart></Cart>
+      <div className="space-y-5">
+        {
+          carts.map((cart, i)=> <Cart key={i} cart={cart}></Cart>)
+        }
+      </div>
     </div>
   );
 };
