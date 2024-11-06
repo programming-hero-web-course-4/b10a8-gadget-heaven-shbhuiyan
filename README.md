@@ -1,8 +1,34 @@
-# React + Vite
+# Project Title
+- ## My Project Name is Gadget Heaven.
+- ### https://my-8th-assignment-in-ph.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Project Description
+### Through this you can bid and buy players as per your choice.While doing this project I faced many problems especially React Toastify. But I got this help from YouTube and Google Alhamdulillah. But the thing is very interesting.
+
+
+
+
+# Technologies used
+
+## I used some Technologies this project ...
+- ### ES6
+- ### TailwindCss
+- ### DaisyUI
+- ### React 
+- ### Raect Toastify
+- ### etc....
+
+
+
+
+#  key features of this project.
+
+- ### All Button are Dynamic.
+- ### Selected each player.
+- ### Remove each player from seleted section.
+- ### sticky navbar.
+- ### when you click credit button your coin is increase.
+- ### and more features...
