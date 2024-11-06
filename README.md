@@ -3,7 +3,7 @@
 - ### https://my-8th-assignment-in-ph.netlify.app/
 
 ## Requirement Document Link
-- ### file:///home/fahad-bhuiyan/Desktop/Work%20Place/my-8th-assignment-in-ph/Batch-10_Assignment-08.pdf
+- ### https://drive.google.com/file/d/1q7ljGLyj5xcOVHsJtl8KW7dARPImylvf/view?usp=sharing
 
 
 # Project Description
