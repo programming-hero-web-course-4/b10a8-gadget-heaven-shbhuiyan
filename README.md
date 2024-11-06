@@ -2,13 +2,24 @@
 - ## My Project Name is Gadget Heaven.
 - ### https://my-8th-assignment-in-ph.netlify.app/
 
-
+## Requirement Document Link
+- ### file:///home/fahad-bhuiyan/Desktop/Work%20Place/my-8th-assignment-in-ph/Batch-10_Assignment-08.pdf
 
 
 # Project Description
-### Through this you can bid and buy players as per your choice.While doing this project I faced many problems especially React Toastify. But I got this help from YouTube and Google Alhamdulillah. But the thing is very interesting.
+### Through this you can bid and buy players as per your choice.While doing this project I faced many problems especially Local Storage. But I got this help from YouTube and Google Alhamdulillah. But the thing is very interesting.
 
 
+# I used react Fundamental concepts in the project
+- ### JSX
+- ### props
+- ### Hooks
+- ### Keys
+- ### React Router
+- ### State
+- ### etc...........
+
+# I have used for handling and managing data Local Storage.
 
 
 # Technologies used
@@ -24,11 +35,12 @@
 
 
 
-#  key features of this project.
+#  Some feature this project.
 
 - ### All Button are Dynamic.
-- ### Selected each player.
-- ### Remove each player from seleted section.
-- ### sticky navbar.
-- ### when you click credit button your coin is increase.
+- ### Selected product.
+- ### Remove each product from cart or wishlist section.
+- ### show awesome notification.
+- ### dynamic Navbar.
+- ### fully responsive for all screen.
 - ### and more features...
